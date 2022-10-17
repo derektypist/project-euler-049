@@ -21,7 +21,10 @@ const PRIMES = Array(NUMPRIMES).fill(false);
     }
 })(NUMPRIMES);
 
-
+// Function to check if number num is a prime
+function isPrime(num) {
+    return PRIMES[num];
+}
 
 
 
