@@ -8,3 +8,23 @@ What 12-digit number do you form by concatenating the three terms in this sequen
 
 Information at [Project Euler 049](https://projecteuler.net/problem=49)
 
+## UX
+
+**Getting Started**
+
+Select the Show Solution button to show the solution.  Select the Hide Solution button to hide the solution.
+
+**User Stories**
+
+As a user, I can get the solution to be shown or hidden by selecting the appropriate button.
+
+As a user, I expect the function `primePermutations()` to return a number.
+
+As a user, I expect the function `primePermutations()` to return 296962999629.
+
+User stories on function `primePermutations()` taken from [FreeCodeCamp - Coding Interview Prep - Project Euler 049](https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-49-prime-permutations)
+
+**Information Architecture**
+
+The function `primePermutations()` returns a number.
+
