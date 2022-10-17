@@ -27,12 +27,17 @@ function isPrime(num) {
 }
 
 
-
-
 // Function to Show Solution
 function showSolution() {
     // Set Up Variable
     let txt = `Solution is ${primePermutations()}. <br>`;
     // Display Solution in the Browser
     document.getElementById("solution").innerHTML = txt;
+}
+
+// Function to check if a permutation can be formed
+function isPermutation(base, test) {
+    const baseDigits = base.toString().split("");
+    const testDigits = test.toString().split("");
+    return baseDigits.length === testDigits.length && testDigits.every(digit => baseDigits.indexOf(digit) !== -1);
 }
