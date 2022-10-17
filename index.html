@@ -17,11 +17,25 @@
     </header>
 
     <!-- Set Up Instructions -->
-    <section class="container-fluid">
+    <section class="container-fluid instructions">
         <p>The arithmetic sequence, 1487, 4817, 8147, in which each of the three terms increases by 3330, is unusual in two ways: (i) each of the three terms are prime, and, (ii) each of the 4-digit numbers are permutations of one another.</p>
         <p>There are no arithmetic sequences made up of 1-, 2-, or 3-digit primes, exhibiting this property, but there is one other 4-digit increasing sequence.</p>
         <p>What 12-digit number do you form by concatenating the three terms in this sequence.</p>
         <p>Select Show Solution to show the solution.  Or Hide Solution to hide the solution.</p>
+    </section>
+
+    <!-- Set Up and Center Buttons -->
+    <section class="container-fluid">
+        <article class="d-grid gap-2 d-flex justify-content-center">
+            <button type="button" class="btn btn-info" onclick="showSolution()">Show Solution</button>
+            <button type="reset" class="btn btn-warning" onclick="hideSolution()">Hide Solution</button>
+        </article>
+
+        <!-- Solution Information -->
+        <p id="solution"></p>
+
+        <!-- Load Script -->
+        <script src="js/script.js"></script>
     </section>
 </body>
 </html>
