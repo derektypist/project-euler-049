@@ -41,3 +41,20 @@ function isPermutation(base, test) {
     const testDigits = test.toString().split("");
     return baseDigits.length === testDigits.length && testDigits.every(digit => baseDigits.indexOf(digit) !== -1);
 }
+
+/*
+    Function to Return the Solution to the Problem as described in
+    https://projecteuler.net/problem=49
+
+    primePermutations() returns 296962999629
+*/
+function primePermutations() {
+    const STEP = 3330, STEP2 = 6660;
+    const upperBound = 9999 - STEP2;
+    for (let i=1235;i<upperBound;i+=2) {
+        if (i===1487) continue;
+        if (isPrime(i) && isPrime(i+STEP) && isPrime(i+STEP2) && isPermutation(i,i+STEP) && isPermutation(i,i+STEP2)) {
+            return parseInt(i.toString() + (i+STEP).toString() + (i+STEP2).toString());
+        }
+    }
+}
